@@ -20,17 +20,32 @@
                         <v-row
                         align="center"
                         justify="center"
+                        class="mb-7"
                         >
-                            <span id="myname" class="white--text">artiom</span>
+                            <p id="myname" class="white--text">artiom</p>
                         </v-row>
 
                         <v-row
                         align="center"
                         justify="center"
+                        class="mb-10"
+                        >
+                            <p
+                            align="center"
+                            id="description"
+                            class="white--text mx-10"
+                            >My personal website to explore ideas and technologies</p>
+                        </v-row>
+
+                        <v-row
+                        align="center"
+                        justify="center"
+                        class="px-10"
                         >
                             <v-col>
                                 <v-btn
                                 block
+                                class="pa-5"
                                 @click="goToGitHub()"
                                 >
                                     <v-icon
@@ -45,7 +60,7 @@
                             <v-col>
                                 <v-btn
                                 block
-                                class="white--text"
+                                class="white--text pa-5"
                                 color="rgba(17, 205, 239, 1)"
                                 @click="goToLinkedIn()"
                                 >
@@ -94,7 +109,12 @@ export default {
     }
     #myname {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 300%;
+        font-size: 400%;
         font-weight: 900;
+    }
+    #description {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 200%;
+        font-weight: 200;
     }
 </style>
